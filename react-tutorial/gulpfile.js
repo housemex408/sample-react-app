@@ -1,3 +1,5 @@
+//http://tylermcginnis.com/reactjs-tutorial-pt-2-building-react-applications-with-gulp-and-browserify/
+
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var htmlreplace = require('gulp-html-replace');
@@ -9,12 +11,12 @@ var streamify = require('gulp-streamify');
 
 var path = {
   HTML: 'public/index.html',
-  MINIFIED_OUT: 'build.min.js',
-  OUT: 'build.js',
+  MINIFIED_OUT: 'app.min.js',
+  OUT: 'app.js',
   DEST: 'public/dist',
   DEST_BUILD: 'public/dist/build',
   DEST_SRC: 'public/dist/src',
-  ENTRY_POINT: './public/scripts/components/example.js'
+  ENTRY_POINT: './public/scripts/app.js'
 };
 
 gulp.task('copy', function() {

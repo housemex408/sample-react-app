@@ -1,5 +1,5 @@
 
-var Comment = require('./commment');
+var Comment = require('./comment');
 
 var CommentList = React.createClass({
   render: function() {
@@ -20,3 +20,5 @@ var CommentList = React.createClass({
     );
   }
 });
+
+module.exports = CommentList;
